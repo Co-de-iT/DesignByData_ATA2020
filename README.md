@@ -1,4 +1,4 @@
-![Agent Based Tectonics](https://raw.githubusercontent.com/Co-de-iT/DesignByData_EPC_2019/master/%40%20images/cover.jpg)
+![Agent Based Tectonics](https://raw.githubusercontent.com/Co-de-iT/DesignByData_ATA2020/master/%40%20images/canopy_4 set.jpg)
 
 # Agent-based Tectonics @ DesignByData 2020  
   
