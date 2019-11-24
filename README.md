@@ -10,20 +10,11 @@ Tools used: Rhinoceros 3D v6 (includes Grasshopper), Visual Studio 2019.
 
 ---
 
-## AgentSystemFinal
-
-Contains .gh files, the Visual Studio project files and .sln file for the final version of the simulation. There are 3 .gh files: basic, intermediate and full-optional. Read the enclosed **README FIRST.txt** and **changelog.txt** files for full specifications.
-
 ## @ utilities
 
 Contains .gha asssemblies and .dll libraries and general purpose .gh definitions used in the workshop.
 
-**3Dpeople_20181116** - 3D people as meshes in 3 different resolutions
-
-**M00_Millipede FEM field.gh** - simple use of Millipede Grasshopper plugin to generate a scalar and vector field of structural information over a FEM model of a mesh surface  
-**M01_Millipede graphics generator.gh** - generates and bakes geometry for 3 different diagrams of Millipede generated data  
-*Millipede_data.ghdata* - this file is a sample of how data is passed between M00 and M01  
-**interpolate mesh data.gh** - interpolate scalar and vector data while performing a Catmull-Clark subdivision of a mesh - sometimes Millipede can be slow on big geometries. This definition allows the use of a lower-resolution mesh for faster analysis and interpolate data to use on a high-res mesh
+**3Dpeople_20190923** - 3D people as meshes in 3 different resolutions
 
 **Util_Clipping plane - Turntable base.3dm**  
 **Util-01_clipping plane anim.gh**  
@@ -35,12 +26,14 @@ These files are helpers to generate, respectively: an animation of a moving clip
 <br>
 
 
-### @ utilities/Components
+### @ utilities/Components.zip
 **CurlNoise.gha** - calculates Curl Noise for a point in x,y,z - useful to generate spatial vector field data
 
 **FileToScript2.gha** - syncs the code of a C# or VB scripting component in Grasshopper with an external editor - this is an updated version for Rhino6 of FileToScript.gha, a tool written by Mateusz Zwierzycki wrapping up a code by Vicente Soler - additional code to update it for Rhino 6 by Daniel Fink, wrapped and recompiled as a .gha assembly by Alessio Erioli. [Original discussion on FileToScript](https://www.grasshopper3d.com/forum/topics/file-to-script-maths?groupUrl=milkbox&).
 
-**SimplexNoise.dll** - library with Simplex Noise generation functions, it can be used to embed Curl Noise calculations (which are based on Simplex Noise) in a custom C# script
+**Noises.dll** - library with Simplex and Curl Noise generation functions - see **day 02/CS_02_functions.gh**
+
+**SimplexNoise.dll** - library with Simplex Noise generation functions, it can be used to embed Noise calculations in a custom C# script
 <br>
 
 ### @ utilities/Display Modes
@@ -83,26 +76,23 @@ These folders contain the daily progress of the course. When present, the **in c
 **CS_05_delegates example.gh** - explanation of delegates, anonymous functions and lambda syntax in C#  
 **CS_06_RTree point search.gh** - using RTree data structure in C# - simple example of nearest neighbours search
 
-**reference mesh.gh** - a reference mesh model to use in next exercises
 
 #### day 03/AgentSystem
 
 Visual Studio project folder for the basic Agent System setup
 
-**AgentSystemFlock.gh** - a flocking agent system based on Craig Reynolds classical rules  
-**AgentSystemMesh.gh** - implementation of the FollowMesh behavior in the Agent System  
-**FollowMesh.gh** - Particle System following a mesh geometry
-
-#### day 03/CS backup files
-Backup of some initialization .cs files
+**AgentSystem.gh** - a flocking agent system based on Craig Reynolds classical rules
   
   
 ### day 04
 
-#### day 04/AgentSystem
-Visual Studio project folder for the evolved version of the Agent System
+**Mesh Base treatment.gh + 3dm** - files to build vertex-colored meshes for scalar and vector data fields, to use with the Agent_Bodies workflow.
 
-**AgentSystem.gh** - the final version of the Agent System - agents are capable of patrolling a mesh surface, read scalar and vector data and release elementary bodies along their trajectories whose formation results in a performative ornamentation
+**Post-Processing_Dendro.gh** - file for isosurfacing line-base network geometries. Reading the [Dendro](https://www.food4rhino.com/app/dendro) plugin documentation is strongly suggested here
+<br>
 
+#### day 04/Agent_Bodies
+Visual Studio project folder for the Agent Bodies strategies (for the assigment).
 
-_NOTE: create a separate final version of the workflow with Dendro definitions included_
+**Agent_Bodies.gh** - the final version of the Agent System with bodies - agents are populating a mesh surface, read scalar and vector data and have simple polyline bodies whose limbs search connection with the neighbours and their global formation results in a performative ornamentation
+
