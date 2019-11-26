@@ -91,7 +91,7 @@ Visual Studio project folder for the basic Agent System setup
 **Post-Processing_Dendro.gh** - file for isosurfacing line-base network geometries. Reading the [Dendro](https://www.food4rhino.com/app/dendro) plugin documentation is strongly suggested here
 <br>
 
-#### day 04/Agent_Bodies
+### day 04/Agent_Bodies
 Visual Studio project folder for the Agent Bodies strategies (for the assigment).
 
 **Agent_Bodies.gh** - the final version of the Agent System with bodies - agents are populating a mesh surface, read scalar and vector data and have simple polyline bodies whose limbs search connection with the neighbours and their global formation results in a performative ornamentation
