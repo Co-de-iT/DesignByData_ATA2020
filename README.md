@@ -88,7 +88,7 @@ Visual Studio project folder for the basic Agent System setup
 
 **Mesh Base treatment.gh + 3dm** - files to build vertex-colored meshes for scalar and vector data fields, to use with the Agent_Bodies workflow.
 
-**Post-Processing_Dendro.gh** - file for isosurfacing line-base network geometries. Reading the [Dendro](https://www.food4rhino.com/app/dendro) plugin documentation is strongly suggested here
+**Post-Processing_Dendro.gh** - file for isosurfacing line-base network geometries. Reading the [Dendro](https://www.food4rhino.com/app/dendro) plugin documentation is strongly suggested here. Since there was little to no time to show it during the seminar, I have prepared a 30 min definition walkthrough [here](https://youtu.be/tub6E9cFefE). Please watch the video before using the definition.
 <br>
 
 ### day 04/Agent_Bodies
