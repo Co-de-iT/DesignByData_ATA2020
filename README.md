@@ -45,7 +45,7 @@ _Tools > Options > View > Display Modes > Import_
 Rhino files and Grasshopper definitions for basic Mesh modeling (low poly to subdivision techniques)
 
 ---
-## dayly progress
+## daily progress
 
 These folders contain the daily progress of the course. When present, the **in class** folder contains the WIP files developed that day
   
